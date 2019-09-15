@@ -4,8 +4,15 @@ import epi.test_framework.GenericTest;
 public class ReverseDigits {
   @EpiTest(testDataFile = "reverse_digits.tsv")
   public static long reverse(int x) {
-    // TODO - you fill in here.
-    return 0;
+    long rev = 0;
+    long x2 = Math.abs(x);
+    boolean negative = x < 0 ? true : false;
+    while (x2 > 0) {
+      rev = rev*10 + (x2%10);
+      x2 /= 10;
+    }
+
+    return negative ? -rev : rev;
   }
 
   public static void main(String[] args) {
