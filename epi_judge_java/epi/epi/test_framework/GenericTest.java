@@ -35,7 +35,7 @@ public class GenericTest {
    * @param expectedType    - optional custom expected value type if it doesn't
    *                          match m return type
    */
-  private static TestResult genericTestMain(
+  private static epi.test_framework.TestResult genericTestMain(
       String[] commandlineArgs, String testFile, String testDataFile,
       Method testFunc, BiPredicate<Object, Object> comparator,
       Field expectedType) {

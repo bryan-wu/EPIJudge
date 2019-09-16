@@ -60,7 +60,7 @@ public class Platform {
         System.out.printf(
             "Warning: %s.dll was not found. Colored output is disabled.\n"
                 +
-                "In order to enable it, pass -Djava.library.path=<path to EPIJudge>/epi_judge_java/epi/test_framework option to java.\n",
+                "In order to enable it, pass -Djava.library.path=<path to EPIJudge>/epi_judge_java/epi/epi.test_framework option to java.\n",
             dllName);
       }
     }
